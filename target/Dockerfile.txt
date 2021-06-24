@@ -1,0 +1,7 @@
+FROM tomcat:9.0
+
+ADD HelloServlet-0.0.1-SNAPSHOT.war C:\Users\Macbook\Desktop\Lectures\apache-tomcat-9.0.48\webapps\
+
+EXPOSE 9090
+
+CMD [“catalina.sh”, “run”]
